@@ -27,9 +27,9 @@ class Carousel {
 
     setCurrentState(direction) {
         if (direction.classList.contains('gallery-controls-prev')) {
-            this.carouselArray.unshift(this.carouselArray.pop()); // Move last to first (previous)
+            this.carouselArray.unshift(this.carouselArray.pop());
         } else if (direction.classList.contains('gallery-controls-next')) {
-            this.carouselArray.push(this.carouselArray.shift());  // Move first to last (next)
+            this.carouselArray.push(this.carouselArray.shift());
         }
         this.updateGallery();
     }
